@@ -1,0 +1,227 @@
+  // java
+  AOS.init();
+    
+  // search input
+  $('.overlay-content form').hide();
+    
+  function openSearch() {
+      $('#myOverlay').fadeIn(2000);
+      $('.overlay-content form').fadeIn(1000).addClass('active');
+      $('.overlay-content form').removeClass('unactive');
+      //   $('.overlay-content form').delay(2000).slideDown(2000);
+  }
+
+  function closeSearch() {
+      $('#myOverlay').fadeOut(2000);
+      $('.overlay-content form').removeClass('active');
+      $('.overlay-content form').fadeIn(1000).addClass('unactive');
+  }
+
+
+// navbar code
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+
+// common countries section
+
+
+
+$(document).ready(function(){
+    // clients opinion carousel
+    $('.owl-carousel.clientscarousel').owlCarousel({
+        loop:true,
+        margin:50,
+       
+        dots: false,
+        // autoplay: true,
+        autoplayTimeout:2000,
+        autoplaySpeed:2000,
+        rtl: true,
+        center: true,
+        nav:true,
+        // stagePadding:true,
+        // startposition:true,
+        responsive:{
+            0:{
+                nav:false,
+                dots:false,
+                items:1
+            },
+            400:{
+                nav:false,
+                dots:false,
+                items:1
+            },
+            600:{
+                nav:false,
+                dots:false,
+                items:1
+            },
+            1000:{
+                nav: true,
+                navText: ["<img src='images/Path2535.svg'>","<img src='images/Path12535.svg'>"],
+                items:3
+            },
+            1200:{
+                nav: true,
+                navText: ["<img src='images/Path2535.svg'>","<img src='images/Path12535.svg'>"],
+                items:3
+            },
+        }
+    });
+    // why us carousel 
+    $('.owl-carousel.whyuscarousel').owlCarousel({
+        loop:true,
+        margin:false,
+        nav:true,
+        dots: false,
+        // autoplay: true,
+        autoplayTimeout:2000,
+        autoplaySpeed:2000,
+        rtl: true,
+        center: false,
+        // stagePadding:true,
+        // startposition:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            400:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                nav: true,
+                navText: ["<img src='images/Path2535.svg'>","<img src='images/Path12535.svg'>"],
+
+                items:2
+            },
+            1200:{
+                nav: true,
+                navText: ["<img src='images/Path2535.svg'>","<img src='images/Path12535.svg'>"],
+
+                items:2
+            },
+        }
+    });
+    $(".click").click(function () {
+      $(this).next("div.content").slideToggle("fast");
+       $(this).find(".arrow").toggleClass('rotate');
+        $(this).find(".arrow").toggleClass('rotate-reset');
+      
+    });
+
+    // toggle morebtn
+    $(".morebtn").click(function () {
+        function style (){
+        $('.morebtn').css({
+            'display' : 'none',
+        });
+       
+    };
+    window.setTimeout( style , 1500 );
+    });
+  });
+
+// loading btn 
+const loginBtn = document.getElementById("login-btn");
+
+loginBtn.addEventListener('click', () => {
+  // Show loader on button click
+  loginBtn.classList.add("loading");
+  // Hide loader after success/failure - here it will hide after 2seconds
+  setTimeout(() => loginBtn.classList.remove("loading"), 1500);
+});
+//   slide toggle to top btn
+$(document).ready(function(){
+    $(".morebtn").click(function(){
+        function styledisplay (){
+            $('.morebtncontent').slideToggle();
+            $('.morebtncommon').css({
+            'margin-top' : '1em',  
+            'display' : 'block',
+            });
+                
+            
+        };
+        window.setTimeout( styledisplay , 1500 );
+    });
+  });
+
+
+
+        // Hide header on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('nav').outerHeight();
+    
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+    
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+    
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+    
+            // Make scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+    
+            // If scrolled down and past the navbar, add class .nav-up.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('nav').removeClass('nav-down').addClass('nav-up');
+                if ($(document).scrollTop() > 20) {
+                    $('.nav-up').css({
+                        'top' : '-140px',
+                    });
+                    $('nav').addClass('border');
+                }else{
+                    $('.nav-down').css({
+                        'top' : '3em',
+                    });
+                    $('nav').removeClass('border');
+                }
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('nav').removeClass('nav-up').addClass('nav-down');
+                    if ($(document).scrollTop() > 20) {
+                        $('.nav-down').css({
+                            'top' : '5px',
+                            'background' : '#FBF9FE',
+                        });
+                        $('nav').addClass('border');
+                    }else{
+                        $('.nav-down').css({
+                            'top' : '3em',
+                        });
+                        $('nav').removeClass('border');
+                    }
+                }
+            }
+    
+            lastScrollTop = st;
+        }
+    

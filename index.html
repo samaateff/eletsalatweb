@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>الاتصالات اللاسلكية</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta charset="utf-8"/>
+    <meta name="author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- css files -->
+    <link rel="stylesheet" href="fonts/_HelveticaNeueLT B.otf">
+    <link rel="stylesheet" href="fonts/_HelveticaNeueLT.otf">
+    <link rel="stylesheet" href="fonts/HelveticaNeueLT B.otf">
+    <link rel="stylesheet" href="fonts/HelveticaNeueLT.otf">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body>
+
+<!-- load bar -->
+<div class="load-bar">
+    <div class="linear"></div>
+</div>
+
+<!-- topheader -->
+<div class="topheaderback">
+<div class="container">
+    <div class="topheader">
+        <div>
+            <ul class="topheaderul">
+                <li><a href="#"> نبذة عنا</a></li>
+                <li><a href="#">كن شريكا</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="dropdown langdrop">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    <span class="langspan">English</span>
+                    <img class="langi" src="images/Path 1209.png" alt="langpic"/>
+                </button>
+                <ul class="dropdown-menu langmenu">
+                    <li><a class="dropdown-item" href="indexrtl.html">العربية</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr/>
+</div>
+</div>
+
+<!-- search input -->
+<div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+        <form action="/action_page.php">
+            <input type="search" placeholder="كلمة البحث ...." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>
+<!-- navbar -->
+
+<nav>
+    <div class="container">
+     <div class="navcontent">
+    <div class="logo">
+        <img src="images/Group 657.png" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#">بطاقات محلية</a></li>
+        <li><a href="#">بطاقات اقليمية</a></li>
+        <li><a href="#">بطاقات عالمية</a></li>
+        <li class="cartli"><a class="login-button" href="#"><img src="images/cart-shopping-solid (1).svg" alt="cartpic"/></a></li>
+        <li class="srchli"><img onclick="openSearch()" class="srchicon" src="images/magnifying-glass-solid (3).svg" alt="searchpic"/></li>
+        <li class="registerli"><a class="join-button" href="#">تسجيل</a></li>
+    </ul>
+
+    <ul class="navbtns">
+        <li><a class="login-button" href="#"><img src="images/cart-shopping-solid (1).svg" alt="cartpic"/></a></li>
+        <li><img onclick="openSearch()" class="srchicon" src="images/magnifying-glass-solid (3).svg" alt="searchpic"/></li>
+        <li><a class="join-button" href="#">تسجيل</a></li>
+    </ul>
+    </div>
+    </div>
+</nav>
+
+
+<!-- home -->
+
+<div class="homesection">
+   
+   <div class="container">
+      <div class="row">
+         <div class="col-md-7">
+            <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000" class="homecontent">
+            <h1 class="hometitle">ملتزمين بابقائك <br/>على تواصل فى كل مكان</h1>
+            <a class="join-button" href="#">المزيد</a>
+            </div>
+         </div>
+         <div class="col-md-5">
+            <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000" class="homecontent">
+                <img class="homeimg" src="images/Path 1448.svg" alt="homelogoimg"/>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+</div>
+
+<!-- common countries -->
+
+<div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+data-aos-duration="1000" id="commonsection" class="commoncountries">
+    <div class="container">
+        <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000" class="titlebtns">
+            <div>
+                <h2 class="countriestitle">البلدان الشائعة</h2>
+            </div>
+            <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000" class="tabsbtns">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">بطافات محلية</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">بطاقات اقليمية</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">بطافات عالمية</button>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000" class="tab-content" id="pills-tabContent">
+            <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000" class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" class="commonfirst">
+                    <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" class="dropsection">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="click col-md-12">البحرين
+                                    <img src="images/layer1.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">
+                                    
+                                    <div class="divstyle">
+                                            <div class="cartcontent">
+                                            <div>
+                                                <h5>Giza mobile</h5>
+                                                <h6>مصر</h6>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>البياتات</span>
+                                                <span>1 جيجا بايت</span>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>الصلاحية</span>
+                                                <span>30 يوم</span>
+                                            </div>
+                                            <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                            </div>
+                                        
+                                        
+                                            <div class="cartcontent">
+                                            <div>
+                                                <h5>Giza mobile</h5>
+                                                <h6>مصر</h6>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>البياتات</span>
+                                                <span>1 جيجا بايت</span>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>الصلاحية</span>
+                                                <span>30 يوم</span>
+                                            </div>
+                                            <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                            
+                                        </div>
+
+                                        <div class="cartcontent">
+                                            <div>
+                                                <h5>Giza mobile</h5>
+                                                <h6>مصر</h6>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>البياتات</span>
+                                                <span>1 جيجا بايت</span>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>الصلاحية</span>
+                                                <span>30 يوم</span>
+                                            </div>
+                                            <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                
+                              
+                              
+                              <div class="col-md-3">
+                                <p class="click col-md-12">تركيا
+                                    <img src="images/Group 669.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">
+                                    
+                                    <div class="divstyleturkey">
+                                            <div class="cartcontentturkey">
+                                            <div>
+                                                <h5>Giza mobile</h5>
+                                                <h6>مصر</h6>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>البياتات</span>
+                                                <span>1 جيجا بايت</span>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>الصلاحية</span>
+                                                <span>30 يوم</span>
+                                            </div>
+                                            <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                            </div>
+                                        
+                                        
+                                            <div class="cartcontentturkey">
+                                            <div>
+                                                <h5>Giza mobile</h5>
+                                                <h6>مصر</h6>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>البياتات</span>
+                                                <span>1 جيجا بايت</span>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>الصلاحية</span>
+                                                <span>30 يوم</span>
+                                            </div>
+                                            <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                            
+                                        </div>
+
+                                        <div class="cartcontentturkey">
+                                            <div>
+                                                <h5>Giza mobile</h5>
+                                                <h6>مصر</h6>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>البياتات</span>
+                                                <span>1 جيجا بايت</span>
+                                            </div>
+                                            <hr/>
+                                            <div class="divstyle">
+                                                <span>الصلاحية</span>
+                                                <span>30 يوم</span>
+                                            </div>
+                                            <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الامارات العربية المتحدة
+                                    <img src="images/united-arab-emirates.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المملكة المتحدة
+                                    <img src="images/united-kingdom.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المملكة العربية السعودية
+                                    <img src="images/saudi-arabia.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">تايلاند
+                                    <img src="images/thailand.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">اسبانيا
+                                    <img src="images/spain.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">ايطاليا
+                                    <img src="images/italy.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الكويت
+                                    <img src="images/kuwait.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">فرنسا
+                                    <img src="images/france.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الولايات المتحدة الامريكية
+                                    <img src="images/united-states.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">سويسرا
+                                    <img src="images/switzerland.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">قطر
+                                    <img src="images/qatar.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الهند
+                                    <img src="images/india.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الاردن
+                                    <img src="images/jordan.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">هولندا
+                                    <img src="images/Layer 66.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المانيا
+                                    <img src="images/germany.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">مصر
+                                    <img src="images/egypt.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">اندونسيا
+                                    <img src="images/indonesia.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">كوريا الجنوبية
+                                    <img src="images/south-korea.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              
+                              
+                        </div>
+                        </div>
+                        <div>
+                            <div class="morebtncontent">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="click col-md-12">البحرين
+                                    <img src="images/layer1.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+                              
+                              <div class="col-md-3">
+                                <p class="click col-md-12">تركيا
+                                    <img src="images/Group 669.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الامارات العربية المتحدة
+                                    <img src="images/united-arab-emirates.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المملكة المتحدة
+                                    <img src="images/united-kingdom.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المملكة العربية السعودية
+                                    <img src="images/saudi-arabia.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">تايلاند
+                                    <img src="images/thailand.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">اسبانيا
+                                    <img src="images/spain.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">ايطاليا
+                                    <img src="images/italy.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الكويت
+                                    <img src="images/kuwait.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">فرنسا
+                                    <img src="images/france.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الولايات المتحدة الامريكية
+                                    <img src="images/united-states.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">سويسرا
+                                    <img src="images/switzerland.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">قطر
+                                    <img src="images/qatar.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الهند
+                                    <img src="images/india.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الاردن
+                                    <img src="images/jordan.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">هولندا
+                                    <img src="images/Layer 66.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المانيا
+                                    <img src="images/germany.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">مصر
+                                    <img src="images/egypt.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">اندونسيا
+                                    <img src="images/indonesia.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">كوريا الجنوبية
+                                    <img src="images/south-korea.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              
+                              
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="click col-md-12">البحرين
+                                    <img src="images/layer1.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+                              
+                              <div class="col-md-3">
+                                <p class="click col-md-12">تركيا
+                                    <img src="images/Group 669.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الامارات العربية المتحدة
+                                    <img src="images/united-arab-emirates.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المملكة المتحدة
+                                    <img src="images/united-kingdom.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المملكة العربية السعودية
+                                    <img src="images/saudi-arabia.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">تايلاند
+                                    <img src="images/thailand.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">اسبانيا
+                                    <img src="images/spain.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">ايطاليا
+                                    <img src="images/italy.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الكويت
+                                    <img src="images/kuwait.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">فرنسا
+                                    <img src="images/france.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الولايات المتحدة الامريكية
+                                    <img src="images/united-states.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">سويسرا
+                                    <img src="images/switzerland.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">قطر
+                                    <img src="images/qatar.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الهند
+                                    <img src="images/india.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الاردن
+                                    <img src="images/jordan.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">هولندا
+                                    <img src="images/Layer 66.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المانيا
+                                    <img src="images/germany.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">مصر
+                                    <img src="images/egypt.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">اندونسيا
+                                    <img src="images/indonesia.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">كوريا الجنوبية
+                                    <img src="images/south-korea.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              
+                              
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="click col-md-12">البحرين
+                                    <img src="images/layer1.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+                              
+                              <div class="col-md-3">
+                                <p class="click col-md-12">تركيا
+                                    <img src="images/Group 669.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الامارات العربية المتحدة
+                                    <img src="images/united-arab-emirates.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المملكة المتحدة
+                                    <img src="images/united-kingdom.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المملكة العربية السعودية
+                                    <img src="images/saudi-arabia.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">تايلاند
+                                    <img src="images/thailand.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">اسبانيا
+                                    <img src="images/spain.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">ايطاليا
+                                    <img src="images/italy.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الكويت
+                                    <img src="images/kuwait.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">فرنسا
+                                    <img src="images/france.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الولايات المتحدة الامريكية
+                                    <img src="images/united-states.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">سويسرا
+                                    <img src="images/switzerland.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">قطر
+                                    <img src="images/qatar.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الهند
+                                    <img src="images/india.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">الاردن
+                                    <img src="images/jordan.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">هولندا
+                                    <img src="images/Layer 66.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">المانيا
+                                    <img src="images/germany.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">مصر
+                                    <img src="images/egypt.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">اندونسيا
+                                    <img src="images/indonesia.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p class="click col-md-12">كوريا الجنوبية
+                                    <img src="images/south-korea.svg" alt="flag" class=" arrow"/>
+                               <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                                </p>
+                                <div class="content">content</div>
+                              </div>
+
+                              
+                              
+                        </div>
+                        </div>
+
+                        <button id="login-btn" class="morebtn action-btn">
+                            
+                            عرض اكثر من 190 بلدا
+                            <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                          
+                        </button>
+                        </div>
+                        <a href="#commonsection" class="morebtncommon action-btn">عرض البلدان الشائعة</a>
+
+                </div>
+            </div>
+            <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000" class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="commonsecond">
+                <div class="dropsection">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="click col-md-12">البحرين
+                                <img src="images/layer1.svg" alt="flag" class=" arrow"/>
+                           <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                            </p>
+                            <div class="content">
+                                
+                                <div class="divstyle">
+                                        <div class="cartcontent">
+                                        <div>
+                                            <h5>Giza mobile</h5>
+                                            <h6>مصر</h6>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>البياتات</span>
+                                            <span>1 جيجا بايت</span>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>الصلاحية</span>
+                                            <span>30 يوم</span>
+                                        </div>
+                                        <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                        </div>
+                                    
+                                    
+                                        <div class="cartcontent">
+                                        <div>
+                                            <h5>Giza mobile</h5>
+                                            <h6>مصر</h6>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>البياتات</span>
+                                            <span>1 جيجا بايت</span>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>الصلاحية</span>
+                                            <span>30 يوم</span>
+                                        </div>
+                                        <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                        
+                                    </div>
+
+                                    <div class="cartcontent">
+                                        <div>
+                                            <h5>Giza mobile</h5>
+                                            <h6>مصر</h6>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>البياتات</span>
+                                            <span>1 جيجا بايت</span>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>الصلاحية</span>
+                                            <span>30 يوم</span>
+                                        </div>
+                                        <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                        
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            
+                          
+                          
+                          <div class="col-md-6">
+                            <p class="click col-md-12">تركيا
+                                <img src="images/Group 669.svg" alt="flag" class=" arrow"/>
+                           <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                            </p>
+                            <div class="content">
+                                
+                                <div class="divstyleturkey">
+                                        <div class="cartcontentturkey">
+                                        <div>
+                                            <h5>Giza mobile</h5>
+                                            <h6>مصر</h6>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>البياتات</span>
+                                            <span>1 جيجا بايت</span>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>الصلاحية</span>
+                                            <span>30 يوم</span>
+                                        </div>
+                                        <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                        </div>
+                                    
+                                    
+                                        <div class="cartcontentturkey">
+                                        <div>
+                                            <h5>Giza mobile</h5>
+                                            <h6>مصر</h6>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>البياتات</span>
+                                            <span>1 جيجا بايت</span>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>الصلاحية</span>
+                                            <span>30 يوم</span>
+                                        </div>
+                                        <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                        
+                                    </div>
+
+                                    <div class="cartcontentturkey">
+                                        <div>
+                                            <h5>Giza mobile</h5>
+                                            <h6>مصر</h6>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>البياتات</span>
+                                            <span>1 جيجا بايت</span>
+                                        </div>
+                                        <hr/>
+                                        <div class="divstyle">
+                                            <span>الصلاحية</span>
+                                            <span>30 يوم</span>
+                                        </div>
+                                        <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                        
+                                    </div>
+                                    </div>
+                                </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <p class="click col-md-12">الامارات العربية المتحدة
+                                <img src="images/united-arab-emirates.svg" alt="flag" class=" arrow"/>
+                           <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                            </p>
+                            <div class="content">content</div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <p class="click col-md-12">المملكة المتحدة
+                                <img src="images/united-kingdom.svg" alt="flag" class=" arrow"/>
+                           <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                            </p>
+                            <div class="content">content</div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <p class="click col-md-12">المملكة العربية السعودية
+                                <img src="images/saudi-arabia.svg" alt="flag" class=" arrow"/>
+                           <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                            </p>
+                            <div class="content">content</div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <p class="click col-md-12">تايلاند
+                                <img src="images/thailand.svg" alt="flag" class=" arrow"/>
+                           <i class="fas fa-arrow-down rotate-reset arrow"></i>
+                            </p>
+                            <div class="content">content</div>
+                          </div>
+
+                      
+                      
+
+                          
+                          
+                    </div>
+                    </div>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="interbigdiv">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="cartcontentinternational">
+                                <div>
+                                    <h5>Giza mobile</h5>
+                                    <h6>مصر</h6>
+                                </div>
+                                <hr/>
+                                <div class="divstyle">
+                                    <span>البياتات</span>
+                                    <span>1 جيجا بايت</span>
+                                </div>
+                                <hr/>
+                                <div class="divstyle">
+                                    <span>الصلاحية</span>
+                                    <span>30 يوم</span>
+                                </div>
+                                <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="cartcontentinternational">
+                                <div>
+                                    <h5>Giza mobile</h5>
+                                    <h6>مصر</h6>
+                                </div>
+                                <hr/>
+                                <div class="divstyle">
+                                    <span>البياتات</span>
+                                    <span>1 جيجا بايت</span>
+                                </div>
+                                <hr/>
+                                <div class="divstyle">
+                                    <span>الصلاحية</span>
+                                    <span>30 يوم</span>
+                                </div>
+                                <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="cartcontentinternational">
+                                <div>
+                                    <h5>Giza mobile</h5>
+                                    <h6>مصر</h6>
+                                </div>
+                                <hr/>
+                                <div class="divstyle">
+                                    <span>البياتات</span>
+                                    <span>1 جيجا بايت</span>
+                                </div>
+                                <hr/>
+                                <div class="divstyle">
+                                    <span>الصلاحية</span>
+                                    <span>30 يوم</span>
+                                </div>
+                                <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="cartcontentinternational">
+                                <div>
+                                    <h5>Giza mobile</h5>
+                                    <h6>مصر</h6>
+                                </div>
+                                <hr/>
+                                <div class="divstyle">
+                                    <span>البياتات</span>
+                                    <span>1 جيجا بايت</span>
+                                </div>
+                                <hr/>
+                                <div class="divstyle">
+                                    <span>الصلاحية</span>
+                                    <span>30 يوم</span>
+                                </div>
+                                <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="cartcontentinternational">
+                                <div>
+                                    <h5>Giza mobile</h5>
+                                    <h6>مصر</h6>
+                                </div>
+                                <hr/>
+                                <div class="divstyle">
+                                    <span>البياتات</span>
+                                    <span>1 جيجا بايت</span>
+                                </div>
+                                <hr/>
+                                <div class="divstyle">
+                                    <span>الصلاحية</span>
+                                    <span>30 يوم</span>
+                                </div>
+                                <a class="buybtn" href="#">US$22 - شراء الان </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+<!-- how to work section -->
+<div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+data-aos-duration="1000" class="worksection">
+  <div class="container">
+    <div class="worksectionbigcontent">
+       <h2 class="worksectiontitle">كيف تعمل المنصة ؟</h2>
+    <div class="row">
+     <div class="col-md-3">
+        <div class="worksectioncontent">
+           <img src="images/Group 1562.png" alt="downloadappimg"/>
+           <span class="worksectiondesc">تنزيل التطبيق</span>
+        </div>
+     </div>
+     <div class="col-md-3">
+      <div class="worksectioncontent">
+         <img src="images/Group 1563.png" alt="frontimg"/>
+         <span class="worksectiondesc"> اختر الوجهة والباقة</span>
+      </div>
+   </div>
+   <div class="col-md-3">
+    <div class="worksectioncontent">
+       <img src="images/Group 1564.png" alt="qrcodeimg"/>
+       <span class="worksectiondesc"> تثبيت eSIM</span>
+    </div>
+ </div>
+ <div class="col-md-3">
+  <div class="worksectioncontent">
+     <img src="images/Group 1565.png" alt="esimactiveimg"/>
+     <span class="worksectiondesc"> تنشيط eSIM</span>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+  
+</div>
+
+<!-- why us section -->
+<div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+data-aos-duration="1000" class="whyussection">
+  <div class="container">
+    <h2 class="worksectiontitle"> لماذا نحن ؟</h2>
+    <div class="row">
+      <div class="col-md-12">
+      <div class="mycarosel">
+          <div class="owl-carousel owl-theme whyuscarousel">
+              <div class="item">
+                 <div class="whyusbigcontent">
+                    <div class="whyusfirstcontent">
+                       <img class="itemimgwhyus" src="images/Group 1560.png" alt="internationalcallimg"/>
+                       <h6 class="whyustitle">تغطية عالمية</h6>
+                       <span class="whyusdesc">تواصل في أكثر من 190 دولة ومنطقة حول العالم</span>
+                    </div>
+                    <div class="whyussecondcontent">
+                       <div class="stylewhyus">
+                         <div class="stylewhyussmall">
+                          <img class="personimg" src="images/icons.png" alt="personicon"/>
+                          <span>دكتور محمد</span>
+                         </div>
+                         <div class="stylewhyussmall">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                         </div>
+                       </div>
+                       <h5>تجربة رائعة</h5>
+                       <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام «هنا يوجد محتوى نصي، هنا يوجد محتوى نصي» فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب</p>
+                    </div>
+                 </div>
+              </div>
+              
+              <div class="item">
+                <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" class="whyusbigcontent">
+                   <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+                   data-aos-duration="1000" class="whyusfirstcontent">
+                      <img class="itemimgwhyustwo" src="images/Group 1561.png" alt="internationalcallimg"/>
+                      <h6 class="whyustitle">تغطية عالمية</h6>
+                      <span class="whyusdesc">تواصل في أكثر من 190 دولة ومنطقة حول العالم</span>
+                   </div>
+                   <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+                   data-aos-duration="1000" class="whyussecondcontent">
+                      <div class="stylewhyus">
+                        <div class="stylewhyussmall">
+                         <img class="personimg" src="images/icons.png" alt="personicon"/>
+                         <span>دكتور محمد</span>
+                        </div>
+                        <div class="stylewhyussmall">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <h5>تجربة رائعة</h5>
+                      <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام «هنا يوجد محتوى نصي، هنا يوجد محتوى نصي» فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب</p>
+                   </div>
+                </div>
+             </div>
+              </div>
+          </div>
+         </div>
+      </div>
+  </div>
+</div>
+
+<!-- clients opinion section -->
+<div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+data-aos-duration="1000" class="clientsopinion">
+  <div class="container ">
+    <h2 class="clientssectiontitle">اراء العملاء</h2>
+    <div class="row">
+      <div class="col-md-12">
+      <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000" class="mycarosel">
+          <div class="owl-carousel owl-theme clientscarousel">
+              <div class="item">
+                  <div class="itemcontent">
+                     <div class="clientsstyle">
+                      <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص</p>
+                     </div>
+                     <div class="styleclients">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                     </div>
+                     <div class="secondcontent">
+                       <div class="d-flex">
+                         <div class="flagimgdiv">
+                          <img src="images/saudi-arabia.png" alt="saudiflag"/>
+                         </div>
+                         &nbsp;
+                      
+                         <div>
+                          <h6>دكتور محمد</h6>
+                          <span>نص يعبر عن وظيفة صاحب التعليق مكونة من سطر او يقل</span>
+                         </div>
+                       </div>
+                     </div>
+                  </div>
+              </div>
+              <div class="item">
+                <div class="itemcontent">
+                   <div class="clientsstyle">
+                    <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص</p>
+                   </div>
+                   <div class="styleclients">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                   </div>
+                   <div class="secondcontent">
+                     <div class="d-flex">
+                       <div class="flagimgdiv">
+                        <img src="images/saudi-arabia.png" alt="saudiflag"/>
+                       </div>
+                       &nbsp;
+                      
+                       <div>
+                        <h6>دكتور محمد</h6>
+                        <span>نص يعبر عن وظيفة صاحب التعليق مكونة من سطر او يقل</span>
+                       </div>
+                     </div>
+                   </div>
+                </div>
+            </div>
+            <div class="item">
+              <div class="itemcontent">
+                 <div class="clientsstyle">
+                  <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص</p>
+                 </div>
+                 <div class="styleclients">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                 </div>
+                 <div class="secondcontent">
+                   <div class="d-flex">
+                     <div class="flagimgdiv">
+                      <img src="images/saudi-arabia.png" alt="saudiflag"/>
+                     </div>
+                     &nbsp;
+                    
+                     <div>
+                      <h6>دكتور محمد</h6>
+                      <span>نص يعبر عن وظيفة صاحب التعليق مكونة من سطر او يقل</span>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+          </div>
+          </div>
+          </div>
+          <div  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000">
+            <img class="clientspic" src="images/Group 1605.png" alt="clientsimg"/>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- footer -->
+<footer>
+  <div class="myfooter">
+      <div class="container">
+          <div class="row">
+
+              <div class="col-12 col-sm-12 col-xs-12 col-md-3  ">
+                  <div data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1000">
+                      <a hrfe="#"><img class="footerlogo" src="images/Group 656.svg" alt="logofooterimg"/></a>
+                      </div>
+                  <div data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1000"><p class="footerp"> شركة سعودية تقدم الشرائح الالكترونية لتقديم خدمة الانترنت سعيا لمنح التواصل دون عقبات حيث نتجاوز الحدود الجغرافية</p> </div>
+
+
+                 
+
+              </div>
+
+              <div class="col-6 col-sm-6 col-xs-6 col-md-3">
+
+                  <div class="pages">
+                      <h5 class="footerhfive">البلدان الشائعة</h5>
+
+                      <ul class="footerul">
+                          <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1000"><a href="#">الولايات المتحدة الأمريكية</a></li>
+                          <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1200"><a href="#">المملكة المتحدة</a></li>
+                          <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1400"><a href="#">تايلاند</a></li>
+                          <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1600"><a href="#">الهند</a></li>
+                      </ul>
+
+                  </div>
+
+              </div>
+
+              <div class="col-6 col-sm-6 col-xs-6 col-md-3">
+                  <div class="pages">
+                      <h5 class="footerhfive footerhfivee">من نحن</h5>
+                      <ul class="footerul">
+                       <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1000"><a href="#">قيمنا</a></li>
+                       <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1200"><a href="#">رؤيتنا</a></li>
+                       <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1400"><a href="#">وعدنا</a></li>
+   <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1400"><a href="#">الشروط والاحكام</a></li>
+   <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1400"><a href="#">سياسة الخصوصية</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-xs-12 col-md-3">
+                  <div class="pages">
+                  <h5 data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1000" class="footerhfivefive footerhfiveefivee">معلومات اضافية</h5>
+                  <ul class="footerul">
+                    <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"><a href="#">مركز الدعم</a></li>
+                    <li data-aos="fade-left" data-aos-easing="ease-out-cubic"
+   data-aos-duration="1000"><a href="#">التواصل معنا</a></li>
+                  </ul>
+                  <div  class="footersocial">
+                    <ul class="socialul">
+              <li><a href="#" class=""> <img class="faceimg" src="images/2559781_media_network_snapchat_social_icon.svg" alt="snapchat"/></a></li>
+                     <li><a href="#" class="footerinsta"> <img src="images/5282544_camera_instagram_social media_social network_instagram logo_icon.svg" alt="instagram"/> </a></li>
+                      <li><a href="#" class=""> <img src="images/104501_twitter_bird_icon (1).svg" alt="twitter"/> </a></li>
+                 </ul>
+                    </div>
+              </div>
+             </div>
+          </div>
+
+         
+
+      </div>
+   <div class="footershape"></div>
+  </div>
+  <div class="lastfooter">
+    <div class="container">
+      <div class="footerlastul d-flex">
+    <span class="lastfooterp"> جميع الحقوق محفوظة لدى 2022 - ONET</span>
+    <a href=#>
+    <img class="lastfooterimg" src="images/Path 1529.svg" alt="footerlogoimg"/>
+    </a>
+    </div>
+</div>
+</div>
+</footer>
+<!-- js files -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>  
