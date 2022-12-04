@@ -1505,12 +1505,20 @@ padding: 0.2em;
         margin: 1em 0;
 
     }
-    p img{
+
+    .cartcontent:after, .cartcontentinternational:after , .cartcontentturkey:after{
+        left: -1.6em;
+    }
+    .commonsecond .cartcontent:after , .commonsecond .cartcontentturkey:after {
+        left: -1.6em;
+
+    }
+    .commonsecond p img, p img{
         width: 10%;
     }
 }
 @media screen and (max-width: 500px) and (min-width: 360px) {
-    p img {
+    .commonsecond p img, p img {
         transform: translate(25%, 30%);
     }
 }
