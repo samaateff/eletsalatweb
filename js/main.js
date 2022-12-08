@@ -43,16 +43,14 @@ $(document).ready(function(){
     $('.owl-carousel.clientscarousel').owlCarousel({
         loop:true,
         margin:50,
-       
+        nav:true,
         dots: false,
-        // autoplay: true,
-        autoplayTimeout:2000,
-        autoplaySpeed:2000,
+        autoplay: true,
         rtl: true,
         center: true,
-        nav:true,
-        // stagePadding:true,
-        // startposition:true,
+    autoplayHoverPause:true,
+    autoplayHoverPause:true,
+    responsiveClass: true,
         responsive:{
             0:{
                 nav:false,
@@ -71,12 +69,12 @@ $(document).ready(function(){
             },
             1000:{
                 nav: true,
-                navText: ["<img src='images/Path2535.svg'>","<img src='images/Path12535.svg'>"],
+                navText: ["<img src='images/Path3512.svg'>","<img src='images/Path12535.svg'>"],
                 items:3
             },
             1200:{
                 nav: true,
-                navText: ["<img src='images/Path2535.svg'>","<img src='images/Path12535.svg'>"],
+                navText: ["<img src='images/Path3512.svg'>","<img src='images/Path12535.svg'>"],
                 items:3
             },
         }
@@ -87,13 +85,12 @@ $(document).ready(function(){
         margin:false,
         nav:true,
         dots: false,
-        // autoplay: true,
-        autoplayTimeout:2000,
-        autoplaySpeed:2000,
+        autoplay: true,
         rtl: true,
         center: false,
-        // stagePadding:true,
-        // startposition:true,
+        autoplayHoverPause:true,
+    autoplayHoverPause:true,
+    responsiveClass: true,
         responsive:{
             0:{
                 items:1
@@ -106,13 +103,13 @@ $(document).ready(function(){
             },
             1000:{
                 nav: true,
-                navText: ["<img src='images/Path2535.svg'>","<img src='images/Path12535.svg'>"],
+                navText: ["<img src='images/Path3512.svg'>","<img src='images/Path12535.svg'>"],
 
                 items:2
             },
             1200:{
                 nav: true,
-                navText: ["<img src='images/Path2535.svg'>","<img src='images/Path12535.svg'>"],
+                navText: ["<img src='images/Path3512.svg'>","<img src='images/Path12535.svg'>"],
 
                 items:2
             },
@@ -224,4 +221,3 @@ $(document).ready(function(){
     
             lastScrollTop = st;
         }
-    
