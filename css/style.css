@@ -353,7 +353,7 @@ nav{
     float: right;
     width: 20%;
     padding: 15px;
-    background: #5595DC;
+    background-color: #FB0066;
     font-size: 17px;
     border: none;
     cursor: pointer;
@@ -362,7 +362,7 @@ nav{
 }
 
 .overlay button:hover {
-    background: #233f5f;
+    background: #df0ab1;
 }
 
 .srchicon{
@@ -1867,8 +1867,126 @@ padding: 0.2em;
     font-size: 14px !important;
     font-weight: bold !important;
 }
+/* privay policy page */
+.privacypolicy{
+    margin-top: 8em;
+}
+.privacytitle{
+    text-align: center;
+    color: #4A4A4A;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.privacyhr{
+    color: rgb(126, 125, 125) !important;
+}
+.privacypolicy h3{
+    color: #4A4A4A;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 1em 0 0.5em 0;
+}
+.privacypolicy h4{
+    color: #4A4A4A;
+    font-size: 25px;
+    font-weight: bold;
+}
+.privacypolicy p {
+    font-size: 14px;
+    color: #707070;
+}
+.privacypolicy span{
+    color: #a099a8 !important;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 0.5em;
+}
+.privacypolicysidesection{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 50px #4c00a91a;
+    border-radius: 20px;
+    padding: 2em;
+    margin-top: 3em;
+    position: relative;
+}
+.privacypolicysidesection hr {
+    color: rgb(126, 125, 125) !important;
+
+}
+.privacypolicymainsection{
+    padding: 0 4em;
+}
+.privacypolicysidesection a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #a099a8 !important;
+    opacity: 0.6;
+}
+.privacypolicysidesection a{
+position: relative;
+}
+.privacypolicysidesection a:after{
+    position: absolute;
+    content: "";
+    top: 2em;
+    /* right: 4.5em; */
+    width: 29px;
+    height: 3px;
+    /* margin: auto; */
+    background: slateblue;
+}
+/* contactus page */
+.contactusform input,.contactusform textarea, .contactusform select{
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: lightgray;
+    direction: rtl !important;
+    margin: 1em 0;
+}
+.contactusform select{
+    color: #707070;
+}
+.contactusform select option{
+    color: #707070 !important;
+}
+.contactusform input:focus,.contactusform textarea:focus, .contactusform select:focus{
+    border:2px solid black !important;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: lightgray;
+    direction: rtl !important;
+    box-shadow: none !important;
+}
+.contactusform button{
+    color: #fff !important;
+    background-color: #FB0066;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.5em;
+    display: block;
+    width: 25%;
+}
+/* be partener page */
+#exampleModall .modal-body {
+    padding: 0 !important;
+    padding: 1em 0.5em !important;
+}
+.btnmodal{
+    background-color: #FB0066 !important;
+    border: 0 !important;
+    display: block !important;
+    margin: auto !important;
+    width: 25%;
+    margin-top: 2em !important;
+}
 /*Stying for small screens*/
   @media screen and (max-width: 1050px){
+    .mycol{
+        padding-bottom: 10em;
+    }
     .whyuscarousel.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled, .clientscarousel.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
         display: none !important;
         
@@ -1956,6 +2074,60 @@ padding: 0.2em;
 /* responsive */
 
 @media screen and (max-width: 767px){
+    .privacypolicy , .privacypolicymainsection {
+        margin-top: 7em !important;
+    }
+    .privacypolicymainsection {
+        padding: 0;
+    }
+    .buyfsectiontitle{
+        font-size: 25px;
+    }
+    .buyfsectiontitle.two{
+        font-size: 25px;
+        margin-top: 1.5em;
+    margin-bottom: -0.5em;
+    }
+    .minicontent h6{
+        font-size: 10px !important;
+    }
+    .minicontent span{
+        font-size: 10px;
+    }
+    .buysectiontwo h2{
+        font-size: 25px;
+        margin-bottom: 1em;
+    margin-top: 1.5em;
+    }
+    .doit {
+        position: unset;
+        margin-top: 1em;
+    }
+    .mycol{
+        display: none;
+    }
+    .dorequire{
+        font-size: 10px !important;
+    }
+    .codeinputpic{
+        position: unset;
+    }
+    .codeinput{
+        font-size: 10px;
+    }
+    .buysectiontwosside .minicontent span{
+        font-size: 10px;
+    }
+    .buysectiontwofside span {
+        font-size: 10px;
+    }
+    .invitedcountries img{
+        width: 25px;
+    }
+    .buyimg{
+        height: unset;
+        margin-bottom: unset;
+    }
     .tabsbtns{
         overflow: auto;
     }
@@ -2116,7 +2288,7 @@ padding: 0.2em;
     .action-btn {
         width: 100%;
     }
-    .divstyle , .divstyleturkey, .commonsecond .divstyleturkey{
+    .divstyle , .divstyleturkey, .commonsecond .divstyleturkey , .divstyleemarites ,.divstyleusa{
         display: block;
         transform: none;
     }
@@ -2147,6 +2319,9 @@ padding: 0.2em;
     }
 }
 @media screen and (max-width: 1300px) and (min-width: 768px) {
+    .mycol{
+        padding-bottom: 10em;
+    }
     .myfooter {
         background: #4C00A9;
         padding: 3em 0em 1em 0;
