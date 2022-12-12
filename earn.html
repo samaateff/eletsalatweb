@@ -32,10 +32,15 @@
         .privacypolicysidesection a:nth-of-type(3){
             opacity: 0.6;
         }
-        .privacypolicysidesection a:nth-of-type(2){
+        .privacypolicysidesection a:nth-of-type(5){
             opacity: 1;
         }
+        .privacypolicysidesection a:nth-of-type(5):after{
+            opacity: 1;
+            right: 60px;
+        }
         .privacypolicysidesection a:nth-of-type(1):after,
+        .privacypolicysidesection a:nth-of-type(2):after,
         .privacypolicysidesection a:nth-of-type(3):after,
         .privacypolicysidesection a:nth-of-type(4):after
         {
@@ -148,60 +153,107 @@
 
 
 <!-- privacypolicy -->
-<div data-aos="fade-left" data-aos-easing="ease-out-cubic"
-data-aos-duration="1000" class="privacypolicy">
-    <h2 data-aos="fade-left" data-aos-easing="ease-out-cubic"
-    data-aos-duration="1000" class="privacytitle">معلومات اضافية</h2>
+<div  class="privacypolicy">
+    <h2  class="privacytitle"> الملف الشخصي</h2>
 <hr class="privacyhr"/>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                <div data-aos="fade-left" data-aos-easing="ease-out-cubic"
                data-aos-duration="1000" class="privacypolicysidesection">
-                 <h4>معلومات اضافية</h4>
+                 <h4> PUIUX</h4>
                  <br/>
                  <hr/>
                  <br/>
-                  <a href="helpcenter.html">مركز الدعم</a>
+                  <a href="accountinfo.html"> معلومات الحساب</a>
                   <br/>
                   <br/>
-                  <a href="contactus.html">تواصل معنا</a>
+                  <a href="profile.html"> Airmoney  و القسائم</a>
                   <br/>
                   <br/>
-                  <a href="privacypolicy.html">سياسه الخصوصيه</a>
+                  <a href="savedcarts.html"> البطاقات المحفوظة</a>
                   <br/>
                   <br/>
-                  <a href="terms&conditions.html">الشروط والاحكام</a>
+                  <a href="requires.html"> الطلبات</a>
+                  <br/>
+                  <br/>
+                  <a href="earn.html"> الربح</a>
                </div>
+               <button style="margin-top: 2em;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#examplleModal">
+                تسجيل الخروج 
+                <i class=" fa fa-sign-out-alt"></i>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="examplleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h2>هل تريد حقا تسجيل الخروج</h2>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-md-8">
-                <div data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                data-aos-duration="1000" class="privacypolicymainsection">
-                    <h3 data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000"> تواصل معنا</h3>
-                    <span>نحن هنا من أجلك، وسيسعد فريقنا بالمساعدة في الإجابة على أي أسئلة أو مشكلات لديك.</span>
-                      <form data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                      data-aos-duration="1000" class="contactusform">
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="text" class="form-control" placeholder="الاسم الاول"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="text" class="form-control" placeholder="الاسم الاخير"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" style="direction: rtl;" type="email" class="form-control" placeholder=" البريد الالكتروني"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" style="direction: rtl;" type="tel" class="form-control" placeholder=" رقم الهاتف"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="text" class="form-control" placeholder=" طراز الجهاز"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="text" class="form-control" placeholder="  eSIM ICCID (اختياري)"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="text" class="form-control" placeholder=" العنوان"/>
-                         <textarea data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" class="form-control" placeholder="رسالة"></textarea>
-                         <button data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="submit">ارسال</button>
-                      </form>
-                      
+
+
+<div  class="privacypolicymainsection profile">
+    <h4 style="margin-bottom: 1em;">الاحالة و الربح </h4>
+<div style="    background: linear-gradient(270deg,#ff5f6d,#ffc371);
+box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%); border-radius: 10px;"   class="row">
+    <div class="col-md-6">
+      
+        <div class=" airmonycontent">
+        <div style="margin-top: 6em ;" class="airmonycontent">
+            <h5 style="color: #fff;">شارك  eSIM  مع الأصدقاء </h5>
+            
+            <span style="color: #fff !important; margin-top: 1em;">    امنح 3 دولارات أمريكية، واحصل على 3 دولارات أمريكية</span>
+            
+        
+             
+            </div>
+         
+        </div>
+       
+    
+    </div>
+    <div class="col-md-6">
+        <div >
+       <img src="images/refer-and-earn.df65ff6.webp" width="100%"/>
+  </div>
+    </div>
+</div>
+<div>
+    <h6 style="color: black !important; margin-top: 2em;">مشاركة رمز الإحالة</h6>
+    <span>احصل على رصيد بقيمة 3 دولارات أمريكية لكل صديق يكمل التسجيل ويُجري عملية شراء. سيحصل أصدقاؤك على خصم 3 دولارات أمريكية على أول عملية شراء لهم. الشروط والأحكام</span>
+</div>
+<div style="justify-content: space-between;box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+background:  #fff; padding: 1em; border-radius: 10px; margin-top: 1em;" class="d-flex">
+    <div>
+        <h6 style="color: black !important;">رمز الاحالة</h6>
+        <span>PUIUX8088</span>
+    </div>
+    <div>
+        <button style="background: none; border: 0;">copy</button>
+    </div>
+</div>
+ <div style="justify-content: space-evenly; margin-top: 2em;" class="d-flex">
+   <a href="#"> <i style="color: green; font-size: 35px;" class="fab fa-whatsapp-square"></i> </a>
+   <a href="#"> <i style="color: rgb(0, 9, 128); font-size: 35px;" class="fab fa-facebook-square"></i> </a>
+   <a href="#">  <i style="color: rgb(68, 73, 139); font-size: 35px;" class="fab fa-twitter-square"></i> </a>
+    <a href="#"> <i style="color: rgb(120, 123, 163); font-size: 35px;" class="fab fa-linkedin"></i> </a>
+        <a href="#">  <i style="color: rgb(184, 185, 207); font-size: 35px;" class="fab fa-telegram-plane"></i> </a>
+            <a href="#"> <i style="color: rgb(42, 42, 44); font-size: 35px;" class="far fa-envelope"></i> </a>
+ </div>
+   
 </div>
             </div>
         </div>

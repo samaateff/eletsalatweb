@@ -5,16 +5,16 @@
   $('.overlay-content form').hide();
     
   function openSearch() {
-      $('#myOverlay').fadeIn(2000);
-      $('.overlay-content form').fadeIn(1000).addClass('active');
+      $('#myOverlay').fadeIn(800);
+      $('.overlay-content form').fadeIn(500).addClass('active');
       $('.overlay-content form').removeClass('unactive');
       //   $('.overlay-content form').delay(2000).slideDown(2000);
   }
 
   function closeSearch() {
-      $('#myOverlay').fadeOut(2000);
+      $('#myOverlay').fadeOut(800);
       $('.overlay-content form').removeClass('active');
-      $('.overlay-content form').fadeIn(1000).addClass('unactive');
+      $('.overlay-content form').fadeIn(500).addClass('unactive');
   }
 
 
@@ -117,10 +117,37 @@ $(document).ready(function(){
     });
     $(".click").click(function () {
       $(this).next("div.content").slideToggle("fast");
+      $(this).find("div.content").toggleClass("d-none");
        $(this).find(".arrow").toggleClass('rotate');
         $(this).find(".arrow").toggleClass('rotate-reset');
       
     });
+    
+    jQuery(document).ready(function (e) {
+        function t(t) {
+            e(t).bind("click", function (t) {
+                t.preventDefault();
+                e(this).parent().fadeOut()
+            })
+        }
+        e(".click").click(function () {
+            var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+            e(".button-dropdown .dropdown-menu").hide();
+            e(".button-dropdown .click").removeClass("active");
+            if (t) {
+                e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".click").addClass("active")
+            }
+        });
+        e(document).bind("click", function (t) {
+            var n = e(t.target);
+            if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+        });
+        e(document).bind("click", function (t) {
+            var n = e(t.target);
+            if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .click").removeClass("active");
+        })
+    });
+
 
     // toggle morebtn
     $(".morebtn").click(function () {
@@ -157,6 +184,7 @@ $(document).ready(function(){
         };
         window.setTimeout( styledisplay , 1500 );
     });
+
   });
 
 

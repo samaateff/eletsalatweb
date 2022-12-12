@@ -35,6 +35,11 @@ src: url('../fonts/HelveticaNeueLT.otf') ;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'HelveticaNeueLT';
+        src: url('../fonts/_HelveticaNeueLT\ B.otf');
+        src: url('../fonts/_HelveticaNeueLT.otf') ;
+        src: url('../fonts/HelveticaNeueLT\ B.otf'); 
+        src: url('../fonts/HelveticaNeueLT.otf') ;
     
 }
 
@@ -58,6 +63,13 @@ body {
     background-color: #FBF9FE;
     overflow-x: hidden !important;
     /* height: 1000px; */
+    
+        font-family: 'HelveticaNeueLT';
+        src: url('../fonts/_HelveticaNeueLT\ B.otf');
+        src: url('../fonts/_HelveticaNeueLT.otf') ;
+        src: url('../fonts/HelveticaNeueLT\ B.otf'); 
+        src: url('../fonts/HelveticaNeueLT.otf') ;
+            
 }
 
 .clear {
@@ -178,7 +190,7 @@ nav{
     width: 100vw;
     /* background-color: #131418; */
     background-color: #FBF9FE;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); */
     display: flex;
     position: fixed;
     z-index: 10;
@@ -657,6 +669,16 @@ min-width: 133%;
     position: relative;
 }
 .cartcontentturkey:after{
+    position: absolute;
+    content: "";
+    top: -4em;
+    left: 0em;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/8bafe89f-479d-478a-b086-09e08ed7faa2.png);
+    background-repeat: no-repeat;
+}
+.cartcontentturkeybuy:after{
     position: absolute;
     content: "";
     top: -4em;
@@ -1673,23 +1695,23 @@ padding: 0.2em;
     justify-content: space-evenly;
     margin: 1em 0;
 }
-.loginicons :nth-last-child(3){
+.loginicons :nth-of-type(3){
     color: #fff;
     background-color: black;    
     padding: 0.5em;
     font-size: 25px;
     border-radius: 5px;
 }
-.loginicons :nth-last-child(2){
+.loginicons :nth-of-type(2){
     color: #fff;
     background-color: #0984A0;
     padding: 0.5em;
     font-size: 25px;
     border-radius: 5px;
 }
-.loginicons :nth-last-child(1){
+.loginicons :nth-of-type(1){
     color: #fff;
-    background-color: rgba(17, 148, 56, 0.829);    
+    /* background-color: rgba(17, 148, 56, 0.829);     */
     padding: 0.5em;
     font-size: 25px;
     border-radius: 5px;
@@ -1771,8 +1793,11 @@ padding: 0.2em;
 .login-form .group .input,
 .login-form .group .button{
 	width:100%;
-	color:#fff;
+	color:black;
 	display:block;
+}
+.login-form .group .button{
+    color: #fff;
 }
 .login-form .group .input,
 .login-form .group .button{
@@ -1785,6 +1810,10 @@ padding: 0.2em;
 .group.d-flex{
     justify-content: space-between;
     margin: 2em 0;
+}
+.dropdown-menuhome{
+    padding: 1em 0 1em 1em;
+    border-radius: 10px;
 }
 .login-form .group input[data-type="password"]{
 	text-security:circle;
@@ -1804,7 +1833,7 @@ padding: 0.2em;
     left: 1em;
 }
 .login-form .group .button{
-	background:#1161ee;
+	background:#FB0066;
 }
 .login-form .group label .icon{
 	width:15px;
@@ -1869,7 +1898,7 @@ padding: 0.2em;
 }
 /* privay policy page */
 .privacypolicy{
-    margin-top: 8em;
+    margin-top: 7em;
 }
 .privacytitle{
     text-align: center;
@@ -1881,6 +1910,10 @@ padding: 0.2em;
 }
 .privacyhr{
     color: rgb(126, 125, 125) !important;
+}
+.btn-primary{
+    background: #FB0066 !important;
+    border: none;
 }
 .privacypolicy h3{
     color: #4A4A4A;
@@ -1981,6 +2014,82 @@ position: relative;
     margin: auto !important;
     width: 25%;
     margin-top: 2em !important;
+}
+.point{
+    background-color: green;    
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-top: 0.2em;
+}
+.airmonycontent.d-flex{
+    background: linear-gradient(270deg,#f09819,#edde5d);
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    padding: 1.2em 1em 0 1em;
+    margin-top: 2em;
+}
+.airmonycontent span{
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 11px;
+    
+}
+.privacypolicymainsection.profile{
+    margin-top: 3em;
+}
+.hermonytwo hr , .privacypolicymainsection.profile hr{
+color: rgb(180, 180, 180) !important;
+margin: 1em 0;
+}
+.infobtn{
+    background: none;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    margin-top: -5px;
+}
+.hermonytwo{
+    margin-top: 4em;
+}
+.hermonytwo h6 {
+    color: #4a4a4a !important;
+    
+}
+.listm{
+    margin-top: -2em;
+    margin-bottom: 1.5em;
+}
+.hermonytwo span{
+    color: #8a8a8a ;
+    font-size: 11px;
+}
+.hermonythree span{
+    color: #7ec027 !important;
+    font-weight: bold;
+    font-size: 16px !important;
+    margin-top: 1em;
+}
+.contactusform button {
+    color: #fff !important;
+    background-color: #FB0066;
+    border: 0;
+    border-radius: 5px;
+    padding: 1.7em;
+    display: block;
+    width: 25%;
+    height: 1px;
+    margin-top: 1em;
+    line-height: 0;
+}
+.border{
+    box-shadow: 0 3px 20px rgb(0 0 0 / 20%);
+}
+.mainflex{
+    justify-content: space-between;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
 /*Stying for small screens*/
   @media screen and (max-width: 1050px){

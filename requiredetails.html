@@ -32,14 +32,23 @@
         .privacypolicysidesection a:nth-of-type(3){
             opacity: 0.6;
         }
-        .privacypolicysidesection a:nth-of-type(2){
+        .privacypolicysidesection a:nth-of-type(4){
             opacity: 1;
         }
+        .privacypolicysidesection a:nth-of-type(4):after{
+            right: 70px;
+          
+        }
         .privacypolicysidesection a:nth-of-type(1):after,
+        .privacypolicysidesection a:nth-of-type(2):after,
         .privacypolicysidesection a:nth-of-type(3):after,
-        .privacypolicysidesection a:nth-of-type(4):after
+        .privacypolicysidesection a:nth-of-type(5):after,
+         .cartcontentturkey:after
         {
             display: none;
+        }
+        .cartcontentturkeybuy:after{
+            display: block;
         }
     </style>
 </head>
@@ -148,61 +157,134 @@
 
 
 <!-- privacypolicy -->
-<div data-aos="fade-left" data-aos-easing="ease-out-cubic"
-data-aos-duration="1000" class="privacypolicy">
-    <h2 data-aos="fade-left" data-aos-easing="ease-out-cubic"
-    data-aos-duration="1000" class="privacytitle">معلومات اضافية</h2>
+<div  class="privacypolicy">
+    <h2  class="privacytitle"> الملف الشخصي</h2>
 <hr class="privacyhr"/>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                <div data-aos="fade-left" data-aos-easing="ease-out-cubic"
                data-aos-duration="1000" class="privacypolicysidesection">
-                 <h4>معلومات اضافية</h4>
+                 <h4> PUIUX</h4>
                  <br/>
                  <hr/>
                  <br/>
-                  <a href="helpcenter.html">مركز الدعم</a>
+                  <a href="accountinfo.html"> معلومات الحساب</a>
                   <br/>
                   <br/>
-                  <a href="contactus.html">تواصل معنا</a>
+                  <a href="profile.html"> Airmoney  و القسائم</a>
                   <br/>
                   <br/>
-                  <a href="privacypolicy.html">سياسه الخصوصيه</a>
+                  <a href="savedcarts.html"> البطاقات المحفوظة</a>
                   <br/>
                   <br/>
-                  <a href="terms&conditions.html">الشروط والاحكام</a>
+                  <a href="requires.html"> الطلبات</a>
+                  <br/>
+                  <br/>
+                  <a href="earn.html">الربح</a>
                </div>
+               <!-- Button trigger modal -->
+<button style="margin-top: 2em;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#examplleModal">
+    تسجيل الخروج 
+    <i class=" fa fa-sign-out-alt"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="examplleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2>هل تريد حقا تسجيل الخروج</h2>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
             </div>
             <div class="col-md-8">
-                <div data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                data-aos-duration="1000" class="privacypolicymainsection">
-                    <h3 data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000"> تواصل معنا</h3>
-                    <span>نحن هنا من أجلك، وسيسعد فريقنا بالمساعدة في الإجابة على أي أسئلة أو مشكلات لديك.</span>
-                      <form data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                      data-aos-duration="1000" class="contactusform">
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="text" class="form-control" placeholder="الاسم الاول"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="text" class="form-control" placeholder="الاسم الاخير"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" style="direction: rtl;" type="email" class="form-control" placeholder=" البريد الالكتروني"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" style="direction: rtl;" type="tel" class="form-control" placeholder=" رقم الهاتف"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="text" class="form-control" placeholder=" طراز الجهاز"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="text" class="form-control" placeholder="  eSIM ICCID (اختياري)"/>
-                         <input data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="text" class="form-control" placeholder=" العنوان"/>
-                         <textarea data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" class="form-control" placeholder="رسالة"></textarea>
-                         <button data-aos="fade-left" data-aos-easing="ease-out-cubic"
-                         data-aos-duration="1000" type="submit">ارسال</button>
-                      </form>
-                      
+
+
+<div  class="privacypolicymainsection profile">
+    <h3 style="margin-bottom: 1em;"> الاحالة والطلب  </h3>
+    <h4 style="margin-bottom: 1em;">  تفاصيل الطلب</h4>
+    <div style="min-width: 100% !important; margin-top: 0 !important;padding-bottom: 1em; margin: 0; background: none;" class="cartcontentturkey">
+        <div>
+            <h5 style="color: #a099a8;">معرف الطلب</h5>
+            <h6 style="color: #a099a8 !important;">20221114-3550384</h6>
+        </div>
+        <hr/>
+        <div class="divstyle">
+            <span>تاريخ الطلب</span>
+            <span>14 نوفـ 2022, 13:38 </span>
+        </div>
+        <hr/>
+        <div class="divstyle">
+            <span>حالة الطلب</span>
+            <span>مكتمل </span>
+        </div>
+        <a style="border-color:  black; color: black !important;" class="buybtn" href="#">عرض الايصال</a>
+        </div>
+
+        <div style="min-width: 100% !important; padding-bottom: 1em; margin: 0; margin: 2em 0; " class="cartcontentturkey cartcontentturkeybuy">
+            <div>
+                <h5>Giza mobile</h5>
+                <h6>مصر</h6>
+            </div>
+            <hr/>
+            <div class="divstyle">
+                <span style="color: #fff !important;">البياتات</span>
+                <span style="color: #fff !important;">1 جيجا بايت</span>
+            </div>
+            <hr/>
+            <div class="divstyle">
+                <span style="color: #fff !important;">الصلاحية</span>
+                <span style="color: #fff !important;">30 يوم</span>
+            </div>
+            <a class="buybtn" href="#"> US$6.50</a>
+            </div>
+            <div style="    background: linear-gradient(90deg,#f09819,#edde5d); margin: 0;
+            box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%); padding: 1em; min-width: 100%; border-radius: 10px;">
+                <h6>ستربح من عملية الشراء هذه</h6>
+                <h5 style="color: #fff;">US$0.33 من Airmoney.</h5>
+            </div>
+
+            <div style="min-width: 100% !important; padding-bottom: 1em; margin: 2em 0; background: none;" class="cartcontentturkey">
+                <div>
+                    <h5 style="color: #787779;">بيانات الدفع </h5>
+                    <!-- <h6 style="color: #a099a8 !important;">مصر</h6> -->
+                </div>
+                <hr/>
+                <div class="divstyle">
+                    <span>طريقة الدفع</span>
+                    <div class="d-flex">
+                        <img src="images/downloadpay.svg"/>
+                    <span>**** 1647</span>
+                        
+                        </div>
+                    
+                </div>
+                <hr/>
+                <div class="divstyle">
+                    <div>
+                    <span>السعر الاجمالي</span>
+                    </div>
+                    <div>
+                        <span>US$6.50</span>
+
+                    </div>
+                </div>
+
+                </div>
+   
 </div>
+<a style="border-color:  black; color: red; width: 70%; margin: auto; text-align: center;" class="buybtn" href="#"> حذف تفاصيل الطلب</a>
+
             </div>
         </div>
     </div>
