@@ -115,38 +115,51 @@ $(document).ready(function(){
             },
         }
     });
+    // $(".click").click(function () {
+    //   $("div.content").hide("fast");
+    //   $("div.content").addClass("d-none");
+    //    $(this).find(".arrow").toggleClass('rotate');
+    //     $(this).find(".arrow").toggleClass('rotate-reset');
     $(".click").click(function () {
-      $(this).next("div.content").slideToggle("fast");
-      $(this).find("div.content").toggleClass("d-none");
-       $(this).find(".arrow").toggleClass('rotate');
+        $(".click").css("border", "1px solid black")
+        $(".click").not(this).css("border", "none")
+        $(".click").not(this).next("div.content").hide("fast");
+        $(".click").not(this).find("div.content").addClass("d-none");
+        $(".click").not(this).find(".arrow").removeClass('rotate');
+        $(".click").not(this).find(".arrow").addClass('rotate-reset');
+        $(this).next("div.content").slideToggle("fast");
+        $(this).find("div.content").toggleClass("d-none");
+        $(this).find(".arrow").toggleClass('rotate');
         $(this).find(".arrow").toggleClass('rotate-reset');
+
+    
       
     });
     
-    jQuery(document).ready(function (e) {
-        function t(t) {
-            e(t).bind("click", function (t) {
-                t.preventDefault();
-                e(this).parent().fadeOut()
-            })
-        }
-        e(".click").click(function () {
-            var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
-            e(".button-dropdown .dropdown-menu").hide();
-            e(".button-dropdown .click").removeClass("active");
-            if (t) {
-                e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".click").addClass("active")
-            }
-        });
-        e(document).bind("click", function (t) {
-            var n = e(t.target);
-            if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
-        });
-        e(document).bind("click", function (t) {
-            var n = e(t.target);
-            if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .click").removeClass("active");
-        })
-    });
+    // jQuery(document).ready(function (e) {
+    //     function t(t) {
+    //         e(t).bind("click", function (t) {
+    //             t.preventDefault();
+    //             e(this).parent().fadeOut()
+    //         })
+    //     }
+    //     e(".click").click(function () {
+    //         var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+    //         e(".button-dropdown .dropdown-menu").hide();
+    //         e(".button-dropdown .click").removeClass("active");
+    //         if (t) {
+    //             e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".click").addClass("active")
+    //         }
+    //     });
+    //     e(document).bind("click", function (t) {
+    //         var n = e(t.target);
+    //         if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+    //     });
+    //     e(document).bind("click", function (t) {
+    //         var n = e(t.target);
+    //         if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .click").removeClass("active");
+    //     })
+    // });
 
 
     // toggle morebtn
