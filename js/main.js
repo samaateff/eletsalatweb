@@ -37,7 +37,7 @@ hamburger.addEventListener('click', ()=>{
     hamburger.classList.toggle("toggle");
 });
 
-// common countries section
+
 
 
 
@@ -118,6 +118,9 @@ $(document).ready(function(){
             },
         }
     });
+
+
+    // common countries section 
     // $(".click").click(function () {
     //   $("div.content").hide("fast");
     //   $("div.content").addClass("d-none");
@@ -134,11 +137,11 @@ $(document).ready(function(){
         $(this).find("div.content").toggleClass("d-none");
         $(this).find(".arrow").toggleClass('rotate');
         $(this).find(".arrow").toggleClass('rotate-reset');
-
-    
-      
     });
     
+    $(".click").click(function (){
+  $('.click').next("div.content").slideToogle("fast") 
+    } );
     // jQuery(document).ready(function (e) {
     //     function t(t) {
     //         e(t).bind("click", function (t) {
