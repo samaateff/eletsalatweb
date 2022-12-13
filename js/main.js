@@ -1,5 +1,8 @@
   // java
-  AOS.init();
+  AOS.init({
+    once:true,
+    mirror:false
+  });
     
   // search input
   $('.overlay-content form').hide();

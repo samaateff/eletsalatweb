@@ -1815,6 +1815,15 @@ padding: 0.2em;
     padding: 1em 0 1em 1em;
     border-radius: 10px;
 }
+.dropdown-menuhome h6 {
+    color: black !important;
+}
+.dropdown-menuhome hr{
+    color: #FB0066 !important;
+    margin: auto;   
+    text-align: center;
+    width: 80%;
+}
 .login-form .group input[data-type="password"]{
 	text-security:circle;
 	-webkit-text-security:circle;
@@ -2088,10 +2097,13 @@ margin: 1em 0;
 .mainflex{
     justify-content: space-between;
 }
-.dropdown:hover .dropdown-menu{
-    display: block;
-}
+
 /*Stying for small screens*/
+@media screen and (min-width: 1050px){
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+}
   @media screen and (max-width: 1050px){
     .mycol{
         padding-bottom: 10em;
