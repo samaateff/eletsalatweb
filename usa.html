@@ -64,14 +64,14 @@
 </div>
 
 <!-- search input -->
-<div id="myOverlay" class="overlay">
-    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-    <div class="overlay-content">
-        <form action="/action_page.php">
-            <input type="search" placeholder="كلمة البحث ...." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
+<div id="myOverlay" class="overlay" onclick="closeSearch()">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+      <form action="/action_page.php">
+          <input type="search" placeholder="كلمة البحث ...." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+  </div>
 </div>
 <!-- navbar -->
 
@@ -87,7 +87,7 @@
       <div class="line3"></div>
   </div>
   <ul class="nav-links">
-      <li><a href="localcarts.html">بطاقات محلية</a></li>
+      <li><a href="#pills-home">بطاقات محلية</a></li>
       <li><a href="regionalcarts.html">بطاقات اقليمية</a></li>
       <li><a href="internationalcarts.html">بطاقات عالمية</a></li>
       <li class="cartli"><a class="login-button" href="#"><img src="images/cart-shopping-solid (1).svg" alt="cartpic"/></a></li>
@@ -98,15 +98,15 @@
   <ul class="navbtns">
       <!-- <li><a class="login-button" href="#"><img src="images/cart-shopping-solid (1).svg" alt="cartpic"/></a></li> -->
       <!-- Button trigger modal -->
-      <li>
+      <li class="navbtnslione">
 <button style="border: 0;" type="button"  data-bs-toggle="modal" data-bs-target="#exampleeModal">
   <img class="login-button" src="images/cart-shopping-solid (1).svg" alt="cartpic"/>
 </button>
 
 
 
-      <li><img onclick="openSearch()" class="srchicon" src="images/magnifying-glass-solid (3).svg" alt="searchpic"/></li>
-      <li><a class="join-button" href="register.html">تسجيل</a></li>
+      <li class="navbtnslitwo"><img onclick="openSearch()" class="srchicon" src="images/magnifying-glass-solid (3).svg" alt="searchpic"/></li>
+      <li class="navbtnslithree"><a class="join-button" href="register.html">تسجيل</a></li>
   </ul>
   </div>
   </div>
