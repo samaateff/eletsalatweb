@@ -2105,6 +2105,9 @@ margin: 1em 0;
     }
 }
   @media screen and (max-width: 1050px){
+    .logo img {
+        width: 75% ;
+    }
     .mycol{
         padding-bottom: 10em;
     }
@@ -2112,9 +2115,10 @@ margin: 1em 0;
         display: none !important;
         
     }
-    .navbtns{
+    .navbtnslitwo , .navbtnslithree , .cartli{
         display: none;
     }
+  
     nav{
         position: fixed;
         z-index: 3;
@@ -2184,6 +2188,7 @@ margin: 1em 0;
 }
 
 @media screen and (min-width: 1050px){
+   
     .navbtns{
         display: flex;
     }
@@ -2195,6 +2200,11 @@ margin: 1em 0;
 /* responsive */
 
 @media screen and (max-width: 767px){
+    .navbtnslione{
+        margin: auto;
+        text-align: center;
+        margin-top: -0.5em;
+    }
     .privacypolicy , .privacypolicymainsection {
         margin-top: 7em !important;
     }
