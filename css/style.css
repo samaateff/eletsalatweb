@@ -718,11 +718,25 @@ min-width: 133%;
 .cartcontentinternational > div{
     padding:1em;
 }
+.cartcontent > div{
+    padding:1em;
+}
+.cartcontentturkey > div{
+    padding:1em;
+}
 #exampleModal .modal-body{
     padding: 0;
     padding-bottom: 5em;
 }
 #exampleModal .modal-content{
+    border-radius: 20px;
+    overflow: hidden;
+}
+#examppleModal .modal-body{
+    padding: 0;
+    padding-bottom: 5em;
+}
+#examppleModal .modal-content{
     border-radius: 20px;
     overflow: hidden;
 }
@@ -739,6 +753,16 @@ padding: 3em 2em 4em 2em;
 #exampleModal .modal-dialog {
     max-width: 1000px !important;
 }
+
+#examppleModal .buysection{
+    background: transparent linear-gradient(59deg, #0984A0 0%, #070841 100%) 0% 0% no-repeat padding-box;
+    border-radius: 20px 20px 0px 0px;
+    /* padding: 3em 2em; */
+    padding: 3em 2em 4em 2em;
+    }
+    #examppleModal .modal-dialog {
+        max-width: 1000px !important;
+    }
 .buyimg{
     transform: translate(4%, 0%);
     width: 105%;
