@@ -2551,6 +2551,20 @@ margin: 1em 0;
     .nav-links.open{
         transform: translate(11.5%, -4%);
     }
+    .doit {
+        position: unset;
+        margin-top: 1em;
+    }
+  
+    .dorequire{
+        font-size: 10px !important;
+    }
+    .codeinputpic{
+        position: unset;
+    }
+    .codeinput{
+        font-size: 10px;
+    }
 }
 @media screen and  (min-width:992px) and (max-width:1050px){
     .nav-links.open{
